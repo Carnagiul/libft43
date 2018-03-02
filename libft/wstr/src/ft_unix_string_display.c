@@ -273,6 +273,18 @@ t_unix_char_limit g_t_global_limit[] = {
 {-1, -1, NULL}
 };
 
+char 		*ft_unix_string_get_name(int wc)
+{
+	for (int j = 0; g_t_global_limit[j].min != -1; j++)
+	{
+		if (g_t_global_limit[j].min <= wc && g_t_global_limit[j].max >= wc)
+			return (g_t_global_limit[j].name);
+		if (g_t_global_limit[j].min > wc)
+			return (NULL);
+	}
+	return (NULL);
+}
+
 int			ft_unix_string_display_ii(int wc)
 {
 	int		c, d;

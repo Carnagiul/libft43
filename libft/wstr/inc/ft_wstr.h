@@ -30,4 +30,6 @@ int						ft_unix_string_nequ(wchar_t *one, wchar_t *two, int len);
 int						ft_unix_string_display(wchar_t *str);
 int						ft_unix_string_display_ii(int wc);
 void 					ft_unix_string_display_put(void);
+char 					*ft_unix_string_get_name(int wc);
+
 #endif
