@@ -26,7 +26,7 @@ else
 fi
 
 if [ $LOCAL = $REMOTE ]; then
-	echo ""
+	echo "Le projet est a jour!"
 elif [ $LOCAL = $BASE ]; then
 	echo ""
     echo "[Mise a jour en attente] [Y/n]: \c"
